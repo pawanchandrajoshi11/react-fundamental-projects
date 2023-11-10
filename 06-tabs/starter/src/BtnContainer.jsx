@@ -1,12 +1,12 @@
 const BtnContainer = ({ jobs, currentItem, setCurrentItem }) => {
   return (
-    <div className='btn-container'>
+    <div className="btn-container">
       {jobs.map((item, index) => {
         return (
           <button
             key={item.id}
+            className={index === currentItem ? "job-btn active-btn" : "job-btn"}
             onClick={() => setCurrentItem(index)}
-            className={index === currentItem ? 'job-btn active-btn' : 'job-btn'}
           >
             {item.company}
           </button>
