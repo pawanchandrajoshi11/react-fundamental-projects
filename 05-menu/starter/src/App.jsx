@@ -10,7 +10,7 @@ const App = () => {
   const [categories, setCategories] = useState(allCategories);
   console.log(categories);
   const filterItems = (category) => {
-    if (category === 'all') {
+    if (category === "all") {
       setMenuItems(menu);
       return;
     }
